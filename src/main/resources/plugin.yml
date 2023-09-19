@@ -1,0 +1,4 @@
+name: GameAPI
+version: '${version}'
+main: me.nettychannell.api.GameAPI
+api-version: 1.20

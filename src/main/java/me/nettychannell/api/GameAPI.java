@@ -2,6 +2,8 @@ package me.nettychannell.api;
 
 import lombok.Getter;
 import me.nettychannell.api.listener.ItemListener;
+import me.nettychannell.api.tasks.ScoreboardUpdaterTask;
+import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
 import org.bukkit.plugin.java.JavaPlugin;
 
 @Getter
@@ -16,6 +18,10 @@ public final class GameAPI extends JavaPlugin {
         instance = this;
         this.finalJavaPlugin = plugin;
         finalJavaPlugin.getServer().getPluginManager().registerEvents(new ItemListener(), this);
+    }
+
+    public void setScoreboardUpdaterTask() {
+        new ScoreboardUpdaterTask();
     }
 
     @Override

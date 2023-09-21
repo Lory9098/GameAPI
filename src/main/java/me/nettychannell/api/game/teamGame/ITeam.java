@@ -14,9 +14,10 @@ public interface ITeam {
 
     /**
      * set the team Data
-     * @param teamData
+     * @param key
+     * @param value
      * */
-    <T> void setTeamData(T teamData);
+    <T> void setTeamData(String key, T value);
 
 
 }

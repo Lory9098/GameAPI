@@ -13,12 +13,6 @@ public interface ITeam {
     void unloadTeam();
 
     /**
-     * add a team
-     * @param team
-     * */
-    void addTeam(ITeam team);
-
-    /**
      * set the team Data
      * @param teamData
      * */

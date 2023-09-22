@@ -9,12 +9,12 @@ public interface IKit {
     /**
      * load this kit
      * */
-    void load();
+    <T> void load(T... params);
 
     /**
      * unload this kit
      * */
-    void unload();
+    <T> void unload(T... params);
 
     /**
      * get the kit name

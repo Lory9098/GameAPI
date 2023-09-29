@@ -15,7 +15,6 @@ public final class GameAPI extends JavaPlugin {
     private JavaPlugin finalJavaPlugin;
 
     public void setPlugin(JavaPlugin plugin) {
-        instance = this;
         this.finalJavaPlugin = plugin;
         finalJavaPlugin.getServer().getPluginManager().registerEvents(new ItemListener(), this);
     }
@@ -26,6 +25,7 @@ public final class GameAPI extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        instance = this;
 
     }
 
